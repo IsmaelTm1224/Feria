@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventas Gastronomía</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      color: #111;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(270deg, #e0f7fa, #f8bbd0, #c5e1a5, #fff59d, #e1bee7);
+      background-size: 1000% 1000%;
+      animation: animateBg 30s ease infinite;
+      z-index: -2;
+    }
+
+    @keyframes animateBg {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .contenedor {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      position: relative;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #0d47a1;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 0 0 8px rgba(13, 71, 161, 0.2);
+    }
+
+    .imagen {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .enlace-volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #29b6f6;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .enlace-volver:hover {
+      background: #0288d1;
+    }
+  </style>
+</head>
+<body>
+  <div id="background"></div>
+  <div class="contenedor">
+    <h1>Ventas Gastronomía</h1>
+
+    
+    <img src="c:\Users\Jery Caba\Desktop\Feria\Mis Imagines\IMG-20250509-WA0008.jpg" alt="Comida del Futuro 1" class="imagen">
+    <img src="c:\Users\Jery Caba\Desktop\Feria\Mis Imagines\IMG-20250509-WA0010.jpg" alt="Comida del Futuro 2" class="imagen">
+
+    <a href="Principal.html" class="enlace-volver">⏎ Volver a la página principal</a>
+  </div>
+</body>
+</html>
