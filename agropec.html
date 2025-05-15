@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agropecuaria: Sembrando Oportunidades</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+   
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #2e7d32;
+      background: #c8e6c9;
+      background-image: radial-gradient(circle at 20% 20%, #dcedc8 15%, transparent 16%),
+                        radial-gradient(circle at 60% 40%, #a5d6a7 15%, transparent 16%),
+                        radial-gradient(circle at 80% 80%, #e8f5e9 15%, transparent 16%);
+      background-size: 200% 200%;
+      animation: movimientoFondo 10s ease-in-out infinite;
+    }
+
+    @keyframes movimientoFondo {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 100% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.96);
+      padding: 50px;
+      border-radius: 18px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    h1 {
+      color: #1b5e20;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 15px;
+      padding-left: 1em;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+      color: #4caf50;
+    }
+
+    .image-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .product-card {
+      background: #f1f8e9;
+      border: 1px solid #dcedc8;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-title {
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .product-description {
+      font-size: 0.95em;
+      color: #43a047;
+    }
+
+    .call-to-action {
+      margin-top: 40px;
+      background-color: #c8e6c9;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.2em;
+      color: #1b5e20;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .call-to-action a {
+      color: #004d00;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .call-to-action a:hover {
+      text-decoration: underline;
+    }
+
+    .new-image-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .new-image-section img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 20px;
+      background-color: #388e3c;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .back-link:hover {
+      background-color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Descubre un Mundo de Oportunidades Agropecuarias</h1>
+    <p>Adéntrate en la riqueza de la tierra y la innovación en la producción. Explora conocimientos fundamentales y descubre ofertas especiales en productos que impulsarán tu actividad agropecuaria hacia el éxito.</p>
+
+    <h2>Conocimiento y Recursos para el Campo</h2>
+    <ul>
+      <li>Técnicas de Cultivo Inteligente</li>
+      <li>Gestión Ganadera Sostenible</li>
+      <li>Soluciones Ecológicas para tu Finca</li>
+      <li>Riego Eficiente y Conservación Hídrica</li>
+      <li>Sanidad Integral para Cultivos y Animales</li>
+      <li>Maquinaria Agrícola de Vanguardia</li>
+      <li>Mantente al Día con las Tendencias del Sector</li>
+    </ul>
+
+    <h2>¡Ofertas Especiales para Impulsar tu Producción!</h2>
+    <div class="image-section">
+      <div class="product-card">
+        <img src="C:\Users\Jery Caba\Desktop\Feria\Imagenes de la feria\Agrope\IMG-20250508-WA0015.jpg" alt="Semillas de Girasol">
+        <div class="product-info">
+          <h3 class="product-title">Semillas de Girasol (Alto Rendimiento)</h3>
+          <p class="product-description">Paquete de semillas certificadas, ideales para maximizar tu cosecha por hectárea.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Jery Caba\Desktop\Feria\Imagenes de la feria\Agrope\IMG-20250508-WA0016.jpg" alt="Semillas de Ají">
+        <div class="product-info">
+          <h3 class="product-title">Semillas de ajíes gustosos</h3>
+          <p class="product-description">Variedad dulce y colorida, ideal para mercados locales.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Jery Caba\Desktop\Feria\Imagenes de la feria\Agrope\IMG-20250508-WA0017.jpg" alt="Sazón Licuado">
+        <div class="product-info">
+          <h3 class="product-title">Sazón Licuado</h3>
+          <p class="product-description">Sabor concentrado y natural que realza tus comidas al instante.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="call-to-action">
+      ¿Listo para invertir en tu futuro agropecuario?
+      <a href="#"> ¡Contáctanos para más información y pedidos!</a>
+    </div>
+
+    <div class="new-image-section">
+      <img src="C:\Users\Jery Caba\Desktop\Feria\Mis Imagines\MENU aGRO.jpg" alt="Menú de Ventas Agropecuarias">
+    </div>
+
+    <center>
+      <a href="Principal.html" class="back-link">⏎ Volver a la página principal</a>
+    </center>
+  </div>
+</body>
+</html>
